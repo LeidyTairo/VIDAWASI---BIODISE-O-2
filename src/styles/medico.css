@@ -1,0 +1,219 @@
+/* medico.css */
+body {
+  background-color: #f5f5f5;
+  font-family: Arial, sans-serif;
+}
+
+.medico-main-component {
+  height: 100vh;
+  display: flex;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.medico-menu {
+  width: 250px;
+  background-color: #333;
+  color: white;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.medico-menu img {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  margin-bottom: 10px;
+}
+
+.medico-menu p {
+  margin-top: 10px;
+  margin-left: 10px;
+  font-size: 1.2rem;
+}
+
+.medico-menu button {
+  margin: 10px;
+  padding-top: 10px;
+  padding-left: 10px;
+  width: 100%;
+  height: 55px;
+  background-color: #444;
+  color: white;
+  font-size: 1.2rem;
+  border: none;
+  cursor: pointer;
+  border-radius: 50px;
+  background-color: transparent;
+  text-align: left;
+}
+
+.medico-menu button:hover {
+  background-color: #696969;
+}
+
+.medico-content {
+  flex-grow: 1;
+  padding-left: 100px;
+  padding-right: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-y: auto;
+}
+
+.medico-profile {
+  align-self: flex-start;
+  display: flex;
+  flex-direction: row;
+  align-items: center;  
+  margin-top: 5rem;
+  margin-bottom: 50px;
+}
+
+.medico-profile img {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  position: relative;
+}
+
+.medico-profile img::before {
+  content: "+"; /* Contenido del pseudo-elemento */
+  position: absolute; /* Posición absoluta para que se superponga a la imagen */
+  top: 50%; /* Posiciona el pseudo-elemento en el centro vertical */
+  left: 50%; /* Posiciona el pseudo-elemento en el centro horizontal */
+  transform: translate(-50%, -50%); /* Centra el pseudo-elemento */
+  opacity: 0; /* Inicialmente oculto */
+  visibility: hidden; /* Inicialmente oculto */
+  font-size: 24px; /* Tamaño del símbolo "+" */
+  color: #ffffff; /* Color del símbolo "+" */
+  background-color: rgba(0, 0, 0, 0.5); /* Color de fondo para resaltar el símbolo */
+  border-radius: 50%; /* Forma de círculo */
+  width: 40px; /* Ancho del pseudo-elemento */
+  height: 40px; /* Alto del pseudo-elemento */
+  line-height: 40px; /* Alineación vertical */
+  text-align: center; /* Alineación horizontal */
+  transition: opacity 0.3s, visibility 0.3s; /* Transición suave al mostrar/ocultar */
+}
+
+.medico-profile img:hover {
+  opacity: 0.5; /* Mostrar el pseudo-elemento cuando se hace hover */
+  visibility: visible; /* Mostrar el pseudo-elemento cuando se hace hover */
+}
+
+.medico-profile-info {
+  display: flex;
+  flex-direction: column;
+}
+.medico-profile-info h2 {
+  font-size: 2rem;
+  color: #333;
+  padding-left: 1rem;
+  margin-bottom: 0px;
+  margin-top: 5px;
+}
+
+.medico-profile-info h3 {
+  margin: 5px 0;
+  height: 4vh;
+  width: 10vw;
+  color: white;
+  margin-left: 1rem;
+  background-color: #3b82f6;
+  border-radius: 20px;
+  display: flex; /* Usa flexbox para centrar el contenido vertical y horizontalmente */
+  align-items: center; /* Centra verticalmente */
+  justify-content: center; /* Centra horizontalmente */
+}
+
+.medico-profile-info-radiologo h3 {
+  margin: 5px 0;
+  height: 4vh;
+  width: 25vw;
+  color: white;
+  margin-left: 1rem;
+  background-color: #3b82f6;
+  border-radius: 20px;
+  display: flex; /* Usa flexbox para centrar el contenido vertical y horizontalmente */
+  align-items: center; /* Centra verticalmente */
+  justify-content: center; /* Centra horizontalmente */
+}
+.medico-profile-info-radiologo  h2 {
+  padding-left: 1rem;
+}
+
+
+.medico-profile button:hover {
+  background-color: #3b82f6;
+  transform: scale(1.05);
+}
+
+.profile-info {
+  display: flex;
+  flex-direction: row;
+}
+.profile-info-div {
+  display: flex;
+  width: 500px;
+  margin-top: 20px;
+  flex-direction: column;
+  margin-left: 5rem;
+  margin-right: 5rem;
+}
+
+.info-box {
+  border: 1px solid #ddd;
+  padding: 20px;
+  width: 100%;
+  border-radius: 8px;
+  background-color: #fafafa;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  height: 100%;
+}
+
+.profile-info-div h2 {
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.info-box p {
+  margin: 3rem;
+  padding-bottom: 1.5em;
+  border-bottom: 2px solid black;
+  color: #555;
+}
+
+/* #button-cerrarsession-medico {
+  
+} */
+#button-cerrarsession-medico-radiologo {
+  margin-top: 20rem;
+}
+.alert {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  padding: 15px;
+  background-color: #f44336; /* Red */
+  color: white;
+  border-radius: 5px;
+  z-index: 1000;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  animation: fadein 0.5s, fadeout 0.5s 4.5s;
+}
+
+@keyframes fadein {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+@keyframes fadeout {
+  from {opacity: 1;}
+  to {opacity: 0;}
+}

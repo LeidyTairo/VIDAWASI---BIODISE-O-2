@@ -1,0 +1,82 @@
+.paciente-info {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    max-width: 800px;
+    margin: auto;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .paciente-info h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .info-section {
+    margin-bottom: 20px;
+  }
+  
+  .info-section h2 {
+    color: #555;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .info-section p {
+    margin: 5px 0;
+    color: #666;
+  }
+  
+  .info-section p strong {
+    color: #333;
+  }
+  
+  .imagenes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+  }
+  
+  .imagenes img {
+    max-width: 200px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+  }
+  
+  .loading {
+    text-align: center;
+    font-size: 18px;
+    color: #888;
+  }
+
+  .back-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+  }
+  
+  .back-button:hover {
+    background-color: #0056b3;
+  }
+
+  .video-container {
+    max-width: 100%;
+    overflow: hidden;
+    margin: 10px 0;
+  }
+  video {
+    width: 100%;
+    height: auto;
+  }

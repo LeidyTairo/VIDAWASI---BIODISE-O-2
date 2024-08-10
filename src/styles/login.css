@@ -1,0 +1,116 @@
+.login-all {
+    display: flex;
+    width: 100%;
+    height: 100vh; /* Full height of the viewport */
+}
+
+/* Imagen del login */
+.login-img-container {
+    flex: 1;
+}
+
+
+.login-image {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+}
+
+/* Contenedor del formulario */
+.login-container {
+    flex: 1;
+    font-family: Arial, sans-serif;
+    color: #333;
+    /* padding: 5rem; Ajustar el padding según sea necesario */
+    display: flex;
+    flex-direction: column;
+    height: auto; /* Para que se ajuste automáticamente al contenido */
+    background-color: #fff; /* Cambiar el fondo del contenedor */
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.login-subcontainer {
+    margin-left: 9vw;
+    margin-top: 15vh;
+}
+
+.login-subcontainer h3 {
+    padding-top: 9rem;
+    color: #007bff;
+    padding-left: 9rem;
+    margin-bottom: 20px;
+}
+
+
+.login-subcontainer > p {
+    margin-bottom: 20px;
+    padding-left: 9rem;
+    color: #807878;
+}
+
+.login-forms {
+    display: flex;
+    flex-direction: column;
+    width: 30rem;
+    padding-left: 9rem;
+}
+
+.login-forms p {
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.login-forms-c1,
+.login-forms-c2 {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.login-forms-c1 input,
+.login-forms-c2 input {
+    flex: 1;
+    border: none;
+    outline: none;
+    margin-left: 10px;
+}
+
+.botones-opciones {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+#button-regresar,
+#button-enviar {
+    width: 100%;
+    margin-top: 20px;
+    margin-right: 1rem;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#button-enviar {
+    margin-left: 1rem;
+}
+
+#button-regresar:hover,
+#button-enviar:hover {
+    background-color: #0056b3;
+}
+.login-error {
+  color: red;
+  margin-top: 5px;
+  font-size: 14px;
+}

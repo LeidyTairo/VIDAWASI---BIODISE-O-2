@@ -1,0 +1,124 @@
+.procesamiento-form-container {
+    width: 40%;
+    margin: 0 auto;
+    padding-top: 30px;
+    padding-left: 20rem;
+    padding-right: 10rem;
+    background-color: #ffffff;
+    overflow-y: auto;
+    /* border: 1px solid #dddddd; */
+    /* border-radius: 10px; */
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+}
+.procesamiento-form-title {
+    font-size: 24px;
+    color: #3b82f6;
+    margin-bottom: 20px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.procesamiento-form-title::before {
+    content: "+";
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-color: #3b82f6;
+    color: #ffffff;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 30px;
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+.procesamiento-patient-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.procesamiento-form-row {
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+
+
+
+.procesamiento-form-row input,
+.procesamiento-form-row select {
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #dddddd;
+  border-radius: 5px;
+}
+
+.procesamiento-form-row input[type="date"] {
+  color: #888888;
+  
+}
+
+.procesamiento-submit-button {
+    background-color: #3b82f6;
+    color: #ffffff;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    align-self: center;
+}
+
+.procesamiento-submit-button:hover {
+    background-color: #2563eb;
+}
+
+.submit-message {
+    font-size: 17px;
+    color: green;
+    text-align: center;
+    margin-top: 20px;
+    font-weight: bold;
+}
+.submit-message-error {
+    font-size: 17px;
+    color:red;
+    text-align: center;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+.procesamiento-atributo-error{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.error-message {
+    color: red;
+    font-size: 10px;
+}
+
+.next-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+  }
+  
+  .next-button:hover {
+    background-color: #0056b3;
+  }

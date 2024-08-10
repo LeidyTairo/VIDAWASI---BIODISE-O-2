@@ -1,0 +1,163 @@
+/* General Styles for CreateAccount */
+.createaccount-wrapper {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.createaccount-section {
+    display: flex;
+    width: 100%;
+    height: 100vh; /* Full height of the viewport */
+}
+
+.createaccount-image-container {
+    flex: 1;
+}
+
+.createaccount-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Cover the space, maintaining aspect ratio */
+}
+
+.createaccount-div-2 {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background-color: white; /* Ensures the background is white */
+}
+
+.createaccount-div-2 h2 {
+    font-size: 3rem;
+    text-align: center;
+    padding-top: 10rem;
+    color: #307dd0;
+}
+
+.createaccount-div-2 h3 {
+    color: #007bff;
+    padding-left: 9rem;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+}
+
+.createaccount-div-2 p {
+    color: #807878;
+    padding-left: 9rem;
+}
+
+.createaccount-medic {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+}
+#b1, #b2 {
+    border: 2px solid black; /* Define un borde de 2px de ancho y de color negro */
+    background-color: transparent; /* Hace el fondo transparente */
+    height: 5rem;
+    width: 40rem;
+    border-radius: 30px; /* Define la curvatura de las esquinas */
+    color: black; /* Color del texto */
+    text-align: center; /* Centra el texto horizontalmente */
+    line-height: 5rem; /* Centra el texto verticalmente */
+    font-size: 1.5rem; /* Tamaño de la fuente */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Transiciones suaves para cambios de color */
+}
+
+#b1:hover, #b2:hover {
+    background-color: black; /* Cambia el fondo a negro al pasar el ratón */
+    color: white; /* Cambia el color del texto a blanco al pasar el ratón */
+}
+
+.createaccount-section button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.createaccount-section button:hover {
+    background-color: #0056b3;
+}
+
+.createaccount-section input,
+.createaccount-section select {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.createaccount-section input:focus,
+.createaccount-section select:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+.createaccount-section label {
+    margin-top: 10px;
+    display: block;
+    color: #555;
+}
+
+/* Container for the user type selection */
+.tipo-usuario button {
+    margin: 5px 0;
+}
+
+/* Form Container */
+.createaccount-container {
+    display: flex;
+    flex-direction: row; 
+}
+
+.createaccount-forms {
+    display: flex;
+    flex-direction: column;
+    width: 40rem;
+    padding-left: 9rem;
+}
+.createaccount-forms input {
+    width: 100%;
+}
+.createaccount-forms select{
+    width: 100%;
+}
+.createaccount-forms label {
+    margin-top: 10px;
+}
+
+.createaccount-forms button {
+    margin-top: 20px;
+}
+
+.submit-user-forms {
+    width: 300px;
+}
+
+.back-button {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-left: 10rem;
+    margin-top: 10rem;
+}
